@@ -18,8 +18,6 @@ resource "aws_cloudwatch_log_metric_filter" "CloudWatch" {
 resource "aws_cloudwatch_log_group" "CloudWatch1" {
   name = "MyApp/access.log"
 }
-
-
 resource "aws_cloudwatch_metric_alarm" "Alarm" {
 
   alarm_name                = "Matric_Alarms"
