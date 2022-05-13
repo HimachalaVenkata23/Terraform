@@ -24,7 +24,7 @@ resource "aws_lb" "test" {
   load_balancer_type = "network"
   #security_groups    = [aws_security_group.sg.id]
   subnets            = [aws_subnet.examplea.id, aws_subnet.exampleb.id]
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
 tags = {
     Environment = "production"

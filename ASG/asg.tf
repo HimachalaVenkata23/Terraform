@@ -1,12 +1,4 @@
-# provider "aws" {
-#    access_key = "*******************"
-#    secret_key = "*******************"
-#    region     = "us-east-1"
-# }
-# resource "aws_placement_group" "test" {
-# name = "test"
-# strategy = "cluster"
-# }
+
 data "aws_ami" "ubuntu" {
 most_recent = true
 filter {
