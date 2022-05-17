@@ -1,0 +1,8 @@
+#creating EC2 instance using aws-cli
+
+aws ec2 run-instances --image-id ami-******** --instance-type t2.micro --key-name keypair1 --user-data file:"C:\***********\userdata.txt"
+
+
+#creating AMI using aws-cli
+
+aws ec2 create-image --instance-id i-********* --name "image" --no-reboot
